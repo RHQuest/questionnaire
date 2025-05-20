@@ -557,7 +557,7 @@ with st.sidebar:
                     submitted = st.form_submit_button("Connexion")
                     if submitted:
                         # Vérifier les identifiants
-                        if st.session_state.admin_username_sidebar == "admin" and st.session_state.admin_password_sidebar == "alsa2025":
+                        if st.session_state.admin_username_sidebar == "admin" and st.session_state.admin_password_sidebar == "alsa2024":
                             st.session_state.admin_authenticated = True
                             st.session_state.show_admin_login = False
                             st.rerun()
