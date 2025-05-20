@@ -1022,13 +1022,13 @@ elif st.session_state.current_page == 'results' and st.session_state.admin_authe
         except:
             st.warning("Image d'évolution des indicateurs non trouvée")
         
-        # Évolution absentéisme (graphique)
-        st.subheader(t('absenteeism'))
-        try:
-            absenteeism_img = Image.open('images/impact_absenteisme.png')
-            st.image(absenteeism_img, caption=t('absenteeism'), use_container_width=True)
-        except:
-            st.warning("Image d'évolution de l'absentéisme non trouvée")
+#        # Évolution absentéisme (graphique)
+#        st.subheader(t('absenteeism'))
+#        try:
+#            absenteeism_img = Image.open('images/impact_absenteisme.png')
+#            st.image(absenteeism_img, caption=t('absenteeism'), use_container_width=True)
+#        except:
+#            st.warning("Image d'évolution de l'absentéisme non trouvée")
 
 elif st.session_state.current_page == 'about' and st.session_state.admin_authenticated:
     st.title("À propos de cette application")
